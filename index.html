@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="./css/font-awesome/css/font-awesome.css" rel="stylesheet" />
+		<link href="./css/reset.css" rel="stylesheet" />
+		<link href="./css/index.css" rel="stylesheet" />
+		<script src="./js/Bilibili.js"></script>
+	</head>
+	<body>
+		<!-- 总容器 -->
+		<div class="wrapper">
+			<!-- 头部 -->
+			<header>
+				<div class="head-top">
+					<div class="head-top-left">
+						<ul id="navigation">
+							<li>
+								<i class="fa fa-twitch"></i>
+								<span>主站</span>
+							</li>
+							<li>
+								番剧
+							</li>
+							<li>
+								游戏中心
+							</li>
+							<li>
+								直播
+							</li>
+							<li>
+								会员购
+							</li>
+							<li>
+								漫画
+							</li>
+							<li>
+								赛事
+							</li>
+							<li>
+								<i class="fa fa-tablet"></i>
+								下载APP
+							</li>
+						</ul>
+
+					</div>
+					<div class="head-top-right">
+						<div class="search">
+							<input type="text" placeholder="在我的世界里也能玩糖豆人？" />
+							<div class="search-icon"><i class="fa fa-search"></i></div>
+						</div>
+						<div class="logeIn">
+							<div class="logeIn-id"><img src="img/akari.jpg"></div>
+							<p class="logeIn-id">登录</p>
+							<p id="register">注册</p>
+						</div>
+						<div class="Contribution">投稿</div>
+					</div>
+				</div>
+				<div class="head-img" id="onBlibili">
+					<img src="img/e62b6b095ef38dfb742687f11e4b570dde420b5d.png" />
+				</div>
+			</header>
+			<!-- 主体内容部分 -->
+			<div class="content">
+				<!-- 主题导航部分 -->
+				<div class="content-navigation">
+					<div class="content-navigation-left">
+						<ul class="ul-frist">
+							<li>
+								<div><i class="fa fa-home"></i></div>
+								<span>&nbsp;首页</span>
+							</li>
+							<li>
+								<div><i class="fa fa-star"></i></div>
+								<span>&nbsp;动态</span>
+							</li>
+							<li>
+								<div><i class="fa fa-area-chart"></i></div>
+								<span>排行榜</span>
+							</li>
+							<li>
+								<div><i class="fa fa-tasks"></i></div>
+								<span>&nbsp;频道</span>
+							</li>
+						</ul>
+						<span class="tab-line-itnl"></span>
+						<div class="content-navigation-mid">
+							<ul>
+								<li><span>动画</span>
+									<div><span>999+</span></div>
+								</li>
+								<li><span>音乐</span>
+									<div>999+</div>
+								</li>
+								<li><span>舞蹈</span>
+									<div>450</div>
+								</li>
+								<li><span>知识</span>
+									<div>999+</div>
+								</li>
+								<li><span>生活</span>
+									<div>999+</div>
+								</li>
+								<li><span>时尚</span>
+									<div>999+</div>
+								</li>
+								<li><span>娱乐</span>
+									<div>999+</div>
+								</li>
+								<li><span>放映厅</span>
+									<div>28</div>
+								</li>
+								<li><span>番剧</span>
+									<div>58</div>
+								</li>
+								<li><span>国创</span>
+									<div>129</div>
+								</li>
+								<li><span>游戏</span>
+									<div>999+</div>
+								</li>
+								<li><span>数码</span>
+									<div>409</div>
+								</li>
+								<li><span>鬼畜</span>
+									<div>97</div>
+								</li>
+								<li><span>资讯</span>
+									<div>101</div>
+								</li>
+								<li><span>影视</span>
+									<div>999+</div>
+								</li>
+								<li><span>更多 &nbsp;&or;</span></li>
+							</ul>
+						</div>
+						<span class="tab-line-itnl" style="margin:0 12px 0 0;"></span>
+						<div class="content-navigation-right">
+							<ul>
+								<li>
+									<div><i class="fa fa-calendar"></i></div>
+									<p>专栏</p>
+								</li>
+								<li>
+									<div><i class="fa fa-flag"></i></div>
+									<p>活动</p>
+								</li>
+								<li>
+									<div><i class="fa fa-institution"></i></div>
+									<p>小黑屋</p>
+								</li>
+								<li>
+									<div><i class="fa fa-video-camera"></i></div>
+									<p>直播</p>
+								</li>
+								<li>
+									<div><i class="fa fa-book"></i></div>
+									<p>课堂</p>
+								</li>
+								<li>
+									<div><i class="fa fa-music"></i></div>
+									<p style="margin-left:13px;">音乐PLUS</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- 轮播、热门视频 -->
+				<div class="frist-body">
+					<div class="lunbo" id="lunbo">
+						<img src="img/lunbo1.jpg" />
+						<img src="img/lunbo2.jpg" />
+						<img src="img/lunbo3.jpg" />
+						<img src="img/lunbo4.jpg" />
+						<img src="img/lunbo5.jpg" />
+					</div>
+					<div class="frist-body-right">
+						<ul>
+							<li class="info-img">
+								<img src="img/0494453b6e25cef2b6229180146bbd26369aa64d.jpg@412w_232h_1c_100q.jpg">
+								<div class="info-box">
+									<p class="title" title="【初音ミク】10年后的VOCALOID的歌【ピノキオピー】">
+										【初音ミク】10年后的VOCALOID的歌【ピノキオピー】
+									</p>
+									<p class="up">ピノキオピー_official</p>
+									<p class="play">7.1万播放</p>
+								</div>
+							</li>
+							<li class="info-img">
+								<img src="img/fe62fbc6e2e97700a555a598646aa2d6f31b2682.jpg@412w_232h_1c_100q.jpg">
+								<div class="info-box">
+									<p class="title" title="【明日方舟/手书】永世的摇篮【罗德岛】">
+										【明日方舟/手书】永世的摇篮【罗德岛】
+									</p>
+									<p class="up">极东瓶子</p>
+									<p class="play">10.2万播放</p>
+								</div>
+							</li>
+							<li class="info-img">
+								<img src="img/6047f726ae50e1ddd48d50ed9a2826c5cdf52e69.jpg@412w_232h_1c_100q.jpg">
+								<div class="info-box">
+									<p class="title" title="【CSGO】2020干货！30个迷城超实用的技巧，总有你不知道的，mirage，荒漠迷城，米垃圾">
+										【CSGO】2020干货！30个迷城超实用的技巧，总有你不知道的，mirage，荒漠迷城，米垃圾
+									</p>
+									<p class="up">极东瓶子</p>
+									<p class="play">10.2万播放</p>
+								</div>
+							</li>
+							<li class="info-img">
+								<img src="./img/3299f8c7e0d1df7adcb6dfb405a59a1e2d6e9021.jpg@412w_232h_1c_100q.jpg">
+								<div class="info-box">
+									<p class="title" title="【CSGO】2020干货！30个迷城超实用的技巧，总有你不知道的，mirage，荒漠迷城，米垃圾">
+										【CSGO】2020干货！30个迷城超实用的技巧，总有你不知道的，mirage，荒漠迷城，米垃圾
+									</p>
+									<p class="up">极东瓶子</p>
+									<p class="play">10.2万播放</p>
+								</div>
+							</li>
+							<li class="info-img">
+								<img src="img/6538e6ad140b2c159417e156f47736754a767c4d.jpg@412w_232h_1c_100q.jpg">
+								<div class="info-box">
+									<p class="title" title="【崩坏3】丽塔流落荒岛，舰长……">
+										【崩坏3】丽塔流落荒岛，舰长……
+									</p>
+									<p class="up">拉环儿_</p>
+									<p class="play">36.3万播放</p>
+								</div>
+							</li>
+							<li class="info-img">
+								<img src="img/4277c9862ac56c1ace92017403f2fe277ff4f00a.jpg@412w_232h_1c_100q.jpg">
+								<div class="info-box">
+									<p class="title" title="【CSGO】2020干货！30个迷城超实用的技巧，总有你不知道的，mirage，荒漠迷城，米垃圾">
+										【CSGO】2020干货！30个迷城超实用的技巧，总有你不知道的，mirage，荒漠迷城，米垃圾
+									</p>
+									<p class="up">极东瓶子</p>
+									<p class="play">10.2万播放</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 主体第二部分 -->
+				<div class="body-item">
+					<div class="body-item-lfet">
+						<div class="l-con">
+							<div class="svg-icon">
+								<i class="fa fa-bullhorn"></i>
+							</div>
+							<div class="on-link">
+								<span>推广</span>
+							</div>
+							<div class="text-info">
+								<i class="fa fa-fire" style="margin-right: 2px;"></i>
+								<span>20万寻找下一个镇站之宝!</span>
+							</div>
+						</div>
+						<ul class="ext-box">
+							<li>
+								<img src="img1/00ffd821f6ba8f0330aefe907ae2df58.png@412w_232h_1c_100q.png" />
+							</li>
+							<li>
+								<img src="img1/9b812ca3c698fcbcfd126d43c3fd18d29b06a2ca.jpg@412w_232h_1c_100q.jpg" />
+							</li>
+							<li>
+								<img src="img1/555f6c7c89575116116f88544029dcae51595121.jpg@412w_232h_1c_100q.jpg" />
+							</li>
+							<li>
+								<img src="img1/5fd4d762734f4e9ec11eeec183f7acdaade6b34f.jpg@412w_232h_1c_100q.jpg" />
+							</li>
+						</ul>
+						<ul class="ext-box-two">
+							<li>
+								<div>
+									<div class="gg">广告</div>
+									<p>不 穿 白 衬 衫</p>
+								</div>
+							</li>
+							<li>
+								<p>最低9元！平价好穿/小腿袜合集分享 袜长对比/修饰腿形显腿长！JK制服</p>
+							</li>
+							<li>
+								<p>【宣威火腿】3年火腿收官之作，龙哥使出祖传“黑金砍刀”</p>
+							</li>
+							<li>
+								<p>【整条街最沙雕的仔】台妹在上海老弄堂跳起充满记忆的《失恋阵线联盟》</p>
+							</li>
+						</ul>
+						<ul class="ext-box-three">
+							<li>
+								<div>
+									<div class="UP"><span>UP</span></div>
+									<p>蘑菇街官方</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<div class="UP">UP</div>
+									<p>七二十七</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<div class="UP">UP</div>
+									<p>火腿哥大龙</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<div class="UP">UP</div>
+									<p>语荞Hathaway</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="body-item-right">
+						<div class="body-item-right-top">
+							<p>在线列表</p>
+						</div>
+						<div class="body-item-right-bottom">
+							<img src="img1/jdguanggao.jpg" />
+							<div class="gg-img"><img src="img1/下载.png"></div>
+						</div>
+					</div>
+				</div>
+				<!-- 正在直播 -->
+				<div class="body-item-liveBroadcast">
+					<div class="body-item-liveBroadcast-img">
+						<img src="img2/6b8bbebb06c40bce46cd1f032cc555a4.jpg" />
+						<img src="img1/下载.png" />
+					</div>
+					<div class="body-item-liveBroadcast-content">
+						<div class="body-item-liveBroadcast-content-left">
+							<div class="storey-title">
+								<div class="storey-title-lfet">
+									<div class="svg-icon">
+										<i class="fa fa-video-camera"></i>
+									</div>
+									<div class="name">
+										<span>正在直播</span>
+									</div>
+									<div class="text-info">
+										<span>当前共有 5356 个在线直播</span>
+									</div>
+								</div>
+								<div class="storey-title-right">
+									<div>
+										<i class="fa fa-retweet"></i>
+										<span>换一换</span>
+									</div>
+									<div>
+										更多 >
+									</div>
+								</div>
+							</div>
+							<ul class="zone-list-box">
+								<li class="live-card">
+									<div class="pic">
+										<img src="img2/6743f354537d5aecf1e75a672095101a9a51e060.jpg@206w_116h_1c_100q.webp" />
+										<p class="count">
+											<i class="fa fa-user-circle-o"></i>
+											523.6万
+										</p>
+									</div>
+									<div class="up">
+										<div class="up-cover">
+											<img src="img3/tx1.webp" />
+										</div>
+										<div class="txt">
+											<p class="name">哔哩哔哩守望先锋赛事</p>
+											<p class="desc" title="伦敦喷火战斗机 vs 成都猎人 OWL2020赛季季后赛">伦敦喷火战斗机 vs 成都猎人 OWL2020赛季季后赛</p>
+											<p class="tga">守望先锋</p>
+										</div>
+									</div>
+								</li>
+								<li class="live-card">
+									<div class="pic">
+										<img src="img2/08ebbbef1843cdef3690ba8a181a1d9a49458e94.jpg@206w_116h_1c_100q.webp" />
+										<p class="count">
+											<i class="fa fa-user-circle-o"></i>
+											523.6万
+										</p>
+									</div>
+									<div class="up">
+										<div class="up-cover">
+											<img src="img3/tx2.webp" />
+										</div>
+										<div class="txt">
+											<p class="name">哔哩哔哩守望先锋赛事</p>
+											<p class="desc" title="伦敦喷火战斗机 vs 成都猎人 OWL2020赛季季后赛">伦敦喷火战斗机 vs 成都猎人 OWL2020赛季季后赛</p>
+											<p class="tga">守望先锋</p>
+										</div>
+									</div>
+								</li>
+								<li class="live-card">
+									<div class="pic">
+										<img src="img2/6bce74ecf8858809b5e913def2edc8bbf809078c.jpg@206w_116h_1c_100q.webp" />
+										<p class="count">
+											<i class="fa fa-user-circle-o"></i>
+											523.6万
+										</p>
+									</div>
+									<div class="up">
+										<div class="up-cover">
+											<img src="img3/tx3.webp" />
+										</div>
+										<div class="txt">
+											<p class="name">哔哩哔哩守望先锋赛事</p>
+											<p class="desc" title="伦敦喷火战斗机 vs 成都猎人 OWL2020赛季季后赛">伦敦喷火战斗机 vs 成都猎人 OWL2020赛季季后赛</p>
+											<p class="tga">守望先锋</p>
+										</div>
+									</div>
+								</li>
+								<li class="live-card">
+									<div class="pic">
+										<img src="img2/244cebeefa9a489477754620211b6714bf4885f0.jpg@206w_116h_1c_100q.webp" />
+										<p class="count">
+											<i class="fa fa-user-circle-o"></i>
+											523.6万
+										</p>
+									</div>
+									<div class="up">
+										<div class="up-cover">
+											<img src="img3/tx4.webp" />
+										</div>
+										<div class="txt">
+											<p class="name">哔哩哔哩守望先锋赛事</p>
+											<p class="desc" title="伦敦喷火战斗机 vs 成都猎人 OWL2020赛季季后赛">伦敦喷火战斗机 vs 成都猎人 OWL2020赛季季后赛</p>
+											<p class="tga">守望先锋</p>
+										</div>
+									</div>
+								</li>
+								<li class="live-card">
+									<div class="pic">
+										<img src="img2/4ff6cf18f11801c3581ad1f5d86299eba9bfbc2b.jpg@206w_116h_1c_100q.webp" />
+										<p class="count">
+											<i class="fa fa-user-circle-o"></i>
+											523.6万
+										</p>
+									</div>
+									<div class="up">
+										<div class="up-cover">
+											<img src="img3/tx5.webp" />
+										</div>
+										<div class="txt">
+											<p class="name">哔哩哔哩守望先锋赛事</p>
+											<p class="desc" title="伦敦喷火战斗机 vs 成都猎人 OWL2020赛季季后赛">伦敦喷火战斗机 vs 成都猎人 OWL2020赛季季后赛</p>
+											<p class="tga">守望先锋</p>
+										</div>
+									</div>
+								</li>
+								<li class="live-card">
+									<div class="pic">
+										<img src="img2/6dd05d24ddd4f92da82c71eaca355bda7ac420e5.jpg@206w_116h_1c_100q.webp" />
+										<p class="count">
+											<i class="fa fa-user-circle-o"></i>
+											523.6万
+										</p>
+									</div>
+									<div class="up">
+										<div class="up-cover">
+											<img src="img3/tx6.webp" />
+										</div>
+										<div class="txt">
+											<p class="name">哔哩哔哩守望先锋赛事</p>
+											<p class="desc" title="伦敦喷火战斗机 vs 成都猎人 OWL2020赛季季后赛">伦敦喷火战斗机 vs 成都猎人 OWL2020赛季季后赛</p>
+											<p class="tga">守望先锋</p>
+										</div>
+									</div>
+								</li>
+								<li class="live-card">
+									<div class="pic">
+										<img src="img2/ad24a039c6e37aef8d6840fe9881e1cf6d76037a.jpg@206w_116h_1c_100q.webp" />
+										<p class="count">
+											<i class="fa fa-user-circle-o"></i>
+											523.6万
+										</p>
+									</div>
+									<div class="up">
+										<div class="up-cover">
+											<img src="img3/tx7.webp" />
+										</div>
+										<div class="txt">
+											<p class="name">哔哩哔哩守望先锋赛事</p>
+											<p class="desc" title="伦敦喷火战斗机 vs 成都猎人 OWL2020赛季季后赛">伦敦喷火战斗机 vs 成都猎人 OWL2020赛季季后赛</p>
+											<p class="tga">守望先锋</p>
+										</div>
+									</div>
+								</li>
+								<li class="live-card">
+									<div class="pic">
+										<img src="img2/e3991bd05ec1ba7393ba1770f31eadc190dccc66.jpg@206w_116h_1c_100q.webp" />
+										<p class="count">
+											<i class="fa fa-user-circle-o"></i>
+											523.6万
+										</p>
+									</div>
+									<div class="up">
+										<div class="up-cover">
+											<img src="img3/tx8.webp" />
+										</div>
+										<div class="txt">
+											<p class="name">哔哩哔哩守望先锋赛事</p>
+											<p class="desc" title="伦敦喷火战斗机 vs 成都猎人 OWL2020赛季季后赛">伦敦喷火战斗机 vs 成都猎人 OWL2020赛季季后赛</p>
+											<p class="tga">守望先锋</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="body-item-liveBroadcast-content-right">
+							<div class="tab-switch">
+								<div class="tab-switch-item">直播排行</div>
+								<div class="tab-switch-item">关注的主播</div>
+								<div class="tab-switch-item-on">为你推荐</div>
+							</div>
+							<div class="recommend-activity-home-slide" id="slb">
+								<img src="img2/93fc526d0db59f83d71444433934c91891261fda.jpg@400w_413h_1c_100q.webp" />
+								<img src="img2/0f724f3bc886d87ebc93acb6cb49c525ec7a7075.jpg@320w_330h_1c_100q.webp" />
+								<img src="img2/5af4311b63081f53f72ec4b2dc942020aded8aed.png@320w_330h_1c_100q.webp" />
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+				<!-- 动画 -->
+				<div class="animation">
+					<div class="animation-left">
+						<div class="card-list">
+							<div class="l-con">
+								<div class="svg-icon">
+									<i class="fa fa-caret-square-o-right"></i>
+								</div>
+								<div class="name">
+									<span>动画</span>
+								</div>
+							</div>
+							<div class="exchange-btn">
+								<div class="btn-change">
+									<i class="fa fa-retweet"></i>
+									<span>换一换</span>
+								</div>
+								<div class="btn-more">
+									<span>更多 ></span>
+								</div>
+							</div>
+						</div>
+						<ul class="zone-list-box">
+							<li class="video-card-common">
+								<div class="video-card-common-img">
+									<img src="img3/45f0660f277d9eac86e4087fe415ae5f5a2982f6.jpg@257w_145h_1c_100q.webp" />
+									<div class="count">
+										<div class="left">
+											<span>
+												<i class="fa fa-caret-square-o-right"></i>
+												6942
+											</span>
+											<span>
+												<i class="fa fa-thumbs-o-up"></i>
+												590
+											</span>
+										</div>
+										<div class="right">
+											<span>03:45</span>
+										</div>
+									</div>
+								</div>
+								<div class="title">
+									<span>这个女人恶名昭著却仍能迷惑众生</span>
+								</div>
+								<div class="up">
+									<div class="up-text">up</div>
+									秃头的佐清
+								</div>
+							</li>
+							<li class="video-card-common">
+								<div class="video-card-common-img">
+									<img src="img3/00b993901a5cb4d9039648e24a3c7d5a589aad73.jpg@257w_145h_1c_100q.webp" />
+									<div class="count">
+										<div class="left">
+											<span>
+												<i class="fa fa-caret-square-o-right"></i>
+												6942
+											</span>
+											<span>
+												<i class="fa fa-thumbs-o-up"></i>
+												590
+											</span>
+										</div>
+										<div class="right">
+											<span>03:45</span>
+										</div>
+									</div>
+								</div>
+								<div class="title">
+									<span>【1080P-60帧】光辉.メランコリック.</span>
+								</div>
+								<div class="up">
+									<div class="up-text">up</div>
+									檀孜淮
+								</div>
+							</li>
+						<li class="video-card-common">
+							<div class="video-card-common-img">
+								<img src="img3/840427aede06bc65b729a77872efd1d33a453a42.jpg@257w_145h_1c_100q.webp" />
+								<div class="count">
+									<div class="left">
+										<span>
+											<i class="fa fa-caret-square-o-right"></i>
+											6942
+										</span>
+										<span>
+											<i class="fa fa-thumbs-o-up"></i>
+											590
+										</span>
+									</div>
+									<div class="right">
+										<span>03:45</span>
+									</div>
+								</div>
+							</div>
+							<div class="title">
+								<span>【未定事件簿MMD】请蔷薇早日c位出道！</span>
+							</div>
+							<div class="up">
+								<div class="up-text">up</div>
+								青柠海风_
+							</div>
+						</li>
+						<li class="video-card-common">
+							<div class="video-card-common-img">
+								<img src="img3/4f3fd54fe793a4b74f2e806e13edf62052c8188a.jpg@257w_145h_1c_100q.webp" />
+								<div class="count">
+									<div class="left">
+										<span>
+											<i class="fa fa-caret-square-o-right"></i>
+											6942
+										</span>
+										<span>
+											<i class="fa fa-thumbs-o-up"></i>
+											590
+										</span>
+									</div>
+									<div class="right">
+										<span>03:45</span>
+									</div>
+								</div>
+							</div>
+							<div class="title">
+								<span>尚雯婕的法语有多牛-尚雯婕法国电视台采访-尚雯婕法语纪录片</span>
+							</div>
+							<div class="up">
+								<div class="up-text">up</div>
+								潭州法语
+							</div>
+						</li>
+							<li class="video-card-common">
+								<div class="video-card-common-img">
+									<img src="img3/2080bc146c6418d7f06dd94c22d01f060046180d.jpg@257w_145h_1c_100q.webp" />
+									<div class="count">
+										<div class="left">
+											<span>
+												<i class="fa fa-caret-square-o-right"></i>
+												6942
+											</span>
+											<span>
+												<i class="fa fa-thumbs-o-up"></i>
+												590
+											</span>
+										</div>
+										<div class="right">
+											<span>03:45</span>
+										</div>
+									</div>
+								</div>
+								<div class="title">
+									<span>巨人全剧最讽刺场面！131话神还原配音动态漫</span>
+								</div>
+								<div class="up">
+									<div class="up-text">up</div>
+									夏目攸
+								</div>
+							</li>
+							<li class="video-card-common">
+								<div class="video-card-common-img">
+									<img src="img3/c39ae59fe224491f30b55c3c3b14e80afcefd648.jpg@257w_145h_1c_100q.webp" />
+									<div class="count">
+										<div class="left">
+											<span>
+												<i class="fa fa-caret-square-o-right"></i>
+												6942
+											</span>
+											<span>
+												<i class="fa fa-thumbs-o-up"></i>
+												590
+											</span>
+										</div>
+										<div class="right">
+											<span>03:45</span>
+										</div>
+									</div>
+								</div>
+								<div class="title">
+									<span>三叶，你来的正是时候</span>
+								</div>
+								<div class="up">
+									<div class="up-text">up</div>
+									整他一个亿
+								</div>
+							</li>
+							<li class="video-card-common">
+								<div class="video-card-common-img">
+									<img src="img3/58a849edd9ae8179928dac457741083c819719fb.jpg@257w_145h_1c_100q.webp" />
+									<div class="count">
+										<div class="left">
+											<span>
+												<i class="fa fa-caret-square-o-right"></i>
+												6942
+											</span>
+											<span>
+												<i class="fa fa-thumbs-o-up"></i>
+												590
+											</span>
+										</div>
+										<div class="right">
+											<span>03:45</span>
+										</div>
+									</div>
+								</div>
+								<div class="title">
+									<span>网毅云语录</span>
+								</div>
+								<div class="up">
+									<div class="up-text">up</div>
+									懵新本懵
+								</div>
+							</li>
+							<li class="video-card-common">
+								<div class="video-card-common-img">
+									<img src="img3/0e354653cf387f0cc4d596fd81d8f2c6be2056bc.jpg@257w_145h_1c_100q.webp" />
+									<div class="count">
+										<div class="left">
+											<span>
+												<i class="fa fa-caret-square-o-right"></i>
+												6942
+											</span>
+											<span>
+												<i class="fa fa-thumbs-o-up"></i>
+												590
+											</span>
+										</div>
+										<div class="right">
+											<span>03:45</span>
+										</div>
+									</div>
+								</div>
+								<div class="title">
+									<span>【熟肉】被夸可爱就会给你点赞的夏色祭</span>
+								</div>
+								<div class="up">
+									<div class="up-text">up</div>
+									夏色祭保護協会
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="animation-right">
+						<div class="rank-header">
+							<span class="name">排行榜</span>
+							<div class="more">
+								<span>更多 ></span>
+							</div>
+						</div>
+						<div class="frist-ul-li">
+							<div class="num">1</div>
+							<div class="preview">
+								<div class="pic">
+									<img src="img3/ae64a482622eecaf4bb0310d6f1133f2e8c817e4.jpg@140w_79h_1c_100q.webp" />
+								</div>
+								<div class="txt">
+									<p class="link">路 过 的 假 面 大 爷</p>
+									<span>综合得分：134.2万</span>
+								</div>
+							</div>
+						</div>
+						<ul>
+							<li class="rank-wrap">
+								<div class="num">2</div>
+								<div class="link">
+									<p class="title">英灵之躯 比肩神明！不要眨眼 你根本不知道FATE系列到底有多少英灵！FGO五周年纪念</p>
+								</div>
+							</li>
+							<li class="rank-wrap">
+								<div class="num">3</div>
+								<div class="link">
+									<p class="title">都2020年还不买特摄！B站最该买的特摄作品大盘点</p>
+								</div>
+							</li>
+							<li class="rank-wrap">
+								<div class="num">4</div>
+								<div class="link">
+									<p class="title">被b站亲手买回的神番！看完后，你就知道十年前的番剧区有多辉煌了！</p>
+								</div>
+							</li>
+							<li class="rank-wrap">
+								<div class="num">5</div>
+								<div class="link">
+									<p class="title">错的不是我，如何回怼杠精！！！</p>
+								</div>
+							</li>
+							<li class="rank-wrap">
+								<div class="num">6</div>
+								<div class="link">
+									<p class="title">都开学了 是时候收一波保护费了</p>
+								</div>
+							</li>
+							<li class="rank-wrap">
+								<div class="num">7</div>
+								<div class="link">
+									<p class="title">冷漠小红开悟了！</p>
+								</div>
+							</li>
+							<li class="rank-wrap">
+								<div class="num">8</div>
+								<div class="link">
+									<p class="title">西游：羊村争霸篇</p>
+								</div>
+							</li>
+							<li class="rank-wrap">
+								<div class="num">9</div>
+								<div class="link">
+									<p class="title">【沙雕动画】你成功引起我的注意</p>
+								</div>
+							</li>
+							<li class="rank-wrap">
+								<div class="num">10</div>
+								<div class="link">
+									<p class="title">10秒一个反转！兰若寺姥姥的情人竟是他！全新剧情颠覆来袭！【新倩女幽魂】</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 右侧导航栏 -->
+			<div class="list-box" id="list-box">
+				<ul>
+					<li>直播</li>
+					<li>动画</li>
+					<li>番剧</li>
+					<li>国创</li>
+					<li>漫画</li>
+					<li>音乐</li>
+					<li>舞蹈</li>
+					<li>游戏</li>
+					<li>知识</li>
+					<li>课堂</li>
+					<li>舞蹈</li>
+					<li>生活</li>
+					<li>鬼畜</li>
+					<li>时尚</li>
+					<li>资讯</li>
+					<li>娱乐</li>
+					<li>专栏</li>
+					<li>电影</li>
+					<li>TV剧</li>
+					<li>影视</li>
+					<li>纪录片</li>
+					<li>&#8645;</li>
+				</ul>
+				<div>
+					<p>&Lambda;</p>
+				</div>
+			</div>
+			
+			<!-- 底部 -->
+			<footer>
+				<div class="link-box-b-footer-wrap">
+					<div class="link-item-link-a">
+						<span class="bt">bilibili</span>
+						<ul>
+							<li>关于我们</li>
+							<li>联系我们</li>
+							<li>用户协议</li>
+							<li>加入我们</li>
+							<li>友情链接</li>
+							<li>隐私政策</li>
+							<li>bilibili认证</li>
+							<li>Investor Relations</li>
+						</ul>
+					</div>
+					<div class="link-item-link-b">
+						<span class="bt">传送门</span>
+						<ul>
+							<li>帮助中心</li>
+							<li>高级弹幕</li>
+							<li>活动专题页</li>
+							<li>侵权申诉</li>
+							<li>活动中心</li>
+							<li>用户反馈论坛</li>
+							<li>壁纸站</li>
+							<li>广告合作</li>
+							<li>名人堂</li>
+						</ul>
+					</div>
+					<div class="link-item-link-c">
+						<div class="biliapp">
+							<div>
+								<i class="fa fa-download"></i>
+							</div>
+							<p>客户端下载</p>
+						</div>
+						<div class="weibo">
+							<div>
+								<i class="fa fa-weibo"></i>
+							</div>
+							<p>新浪微博</p>
+						</div>
+						<div class="weixin">
+							<div>
+								<i class="fa fa-weixin"></i>
+							</div>
+							<p>官方微信</p>
+						</div>
+					</div>
+				</div>
+				<div class="partner-b-footer-wrap">
+					
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
